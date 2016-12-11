@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28019021-B17F-4F2F-8ED7-A56A5CAA01B7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UXDesign</RootNamespace>
+    <AssemblyName>UXDesign</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\Global.css" />
+    <Content Include="Content\Images\Backgrounds\header-banner.jpg" />
+    <Content Include="Content\Images\HeaderMobile.png" />
+    <Content Include="Content\Images\Logos\telerik-academy-logo.png" />
+    <Content Include="Content\Images\social-sprite-icons.png" />
+    <Content Include="Content\Images\telerik-academy-logo.png" />
+    <Content Include="Content\Images\Telerik_Progress_footer_logo.png" />
+    <Content Include="Content\Index.css" />
+    <Content Include="Content\kendo\kendo.black.prefixed.css" />
+    <Content Include="Content\kendo\kendo.common.min.css" />
+    <Content Include="Content\kendo\kendo.default.prefixed.css" />
+    <Content Include="Content\kendo\kendo.metro.min.css" />
+    <Content Include="Content\sweet-alert.css" />
+    <Content Include="obj\Debug\UXDesign.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\UXDesign.dll" />
+    <Content Include="obj\Debug\UXDesign.pdb" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\less\mixin\alerts.less" />
+    <Content Include="Content\less\mixin\background-variant.less" />
+    <Content Include="Content\less\mixin\badges.less" />
+    <Content Include="Content\less\mixin\border-radius.less" />
+    <Content Include="Content\less\mixin\breadcrumbs.less" />
+    <Content Include="Content\less\mixin\button-groups.less" />
+    <Content Include="Content\less\mixin\buttons.less" />
+    <Content Include="Content\less\mixin\center-block.less" />
+    <Content Include="Content\less\mixin\clearfix.less" />
+    <Content Include="Content\less\mixin\forms.less" />
+    <Content Include="Content\less\mixin\gradients.less" />
+    <Content Include="Content\less\mixin\grid-framework.less" />
+    <Content Include="Content\less\mixin\grid.less" />
+    <Content Include="Content\less\mixin\hide-text.less" />
+    <Content Include="Content\less\mixin\image.less" />
+    <Content Include="Content\less\mixin\labels.less" />
+    <Content Include="Content\less\mixin\list-group.less" />
+    <Content Include="Content\less\mixin\nav-divider.less" />
+    <Content Include="Content\less\mixin\nav-vertical-align.less" />
+    <Content Include="Content\less\mixin\opacity.less" />
+    <Content Include="Content\less\mixin\pagination.less" />
+    <Content Include="Content\less\mixin\panels.less" />
+    <Content Include="Content\less\mixin\progress-bar.less" />
+    <Content Include="Content\less\mixin\reset-filter.less" />
+    <Content Include="Content\less\mixin\reset-text.less" />
+    <Content Include="Content\less\mixin\responsive-visibility.less" />
+    <Content Include="Content\less\mixin\tab-focus.less" />
+    <Content Include="Content\less\mixin\table-row.less" />
+    <Content Include="Content\less\mixin\text-emphasis.less" />
+    <Content Include="Content\less\mixin\text-overflow.less" />
+    <Content Include="Content\less\mixin\vendor-prefixes.less" />
+    <Content Include="Content\less\alerts.less" />
+    <Content Include="Content\less\breadcrumbs.less" />
+    <Content Include="Content\less\badges.less" />
+    <Content Include="Content\less\button-groups.less" />
+    <Content Include="Content\less\buttons.less" />
+    <Content Include="Content\less\carousel.less" />
+    <Content Include="Content\less\close.less" />
+    <Content Include="Content\less\code.less" />
+    <Content Include="Content\less\component-animations.less" />
+    <Content Include="Content\less\dropdowns.less" />
+    <Content Include="Content\less\forms.less" />
+    <Content Include="Content\less\glyphicons.less" />
+    <Content Include="Content\less\grid.less" />
+    <Content Include="Content\less\input-groups.less" />
+    <Content Include="Content\less\jumbotron.less" />
+    <Content Include="Content\less\labels.less" />
+    <Content Include="Content\less\list-group.less" />
+    <Content Include="Content\less\media.less" />
+    <Content Include="Content\less\modals.less" />
+    <Content Include="Content\less\navbar.less" />
+    <Content Include="Content\less\navs.less" />
+    <Content Include="Content\less\normalize.less" />
+    <Content Include="Content\less\pager.less" />
+    <Content Include="Content\less\pagination.less" />
+    <Content Include="Content\less\panels.less" />
+    <Content Include="Content\less\popovers.less" />
+    <Content Include="Content\less\print.less" />
+    <Content Include="Content\less\progress-bars.less" />
+    <Content Include="Content\less\responsive-embed.less" />
+    <Content Include="Content\less\responsive-utilities.less" />
+    <Content Include="Content\less\scaffolding.less" />
+    <Content Include="Content\less\tables.less" />
+    <Content Include="Content\less\thumbnails.less" />
+    <Content Include="Content\less\tooltip.less" />
+    <Content Include="Content\less\type.less" />
+    <Content Include="Content\less\utilities.less" />
+    <Content Include="Content\less\wells.less" />
+    <Content Include="Content\bootstrap.css[sm]" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\UXDesign.csprojResolveAssemblyReference.cache" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\jquery.timeago.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jszip.js" />
+    <Content Include="Scripts\kendo\kendo.all.js" />
+    <Content Include="Scripts\kendo\kendo.aspnetmvc.js" />
+    <Content Include="Scripts\sweet-alert.min.js" />
+    <Content Include="Scripts\TILS\global.js" />
+    <Content Include="Scripts\TILS\search.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60520</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60520/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
